@@ -5,6 +5,7 @@ import os
 import sys
 import time
 
+
 def get_file_size(filename):
 	st = os.stat(filename)
 	return st.st_size
