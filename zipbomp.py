@@ -20,6 +20,7 @@ def get_filename_without_extension(name):
 def get_extension(name):
 	return name[name.rfind('.')+1:]
 
+
 def compress_file(infile,outfile):
 	zf = zipfile.ZipFile(outfile, mode='w', allowZip64= True)
 	zf.write(infile, compress_type=zipfile.ZIP_DEFLATED)
